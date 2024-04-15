@@ -6,7 +6,14 @@ The environment can be installed according to the instructions in https://github
 
 The MIU-VL directory is the main directory for the experiments. 
 
+Running the following scripts generates the medical prompts automatically:
 ```bash
-git clone https://github.com/MembrAI/MIU-VL.git
-pip install -r requirements.txt
+cd MIU-VL
+bash RUN/autoprompt/make_auto_mlm.sh
+```
+
+Running the following scripts start the evaluation on the detection task:
+```bash
+cd MIU-VL
+bash RUN/polyp_test/zero_shot_lama.sh
 ```
